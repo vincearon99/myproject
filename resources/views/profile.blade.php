@@ -12,7 +12,7 @@
 
             <img src="{{ auth()->user()->profile_picture 
                 ? asset('storage/' . auth()->user()->profile_picture) 
-                : 'https://via.placeholder.com/100' }}"
+                : asset('images/default.png') }}"
                 class="rounded-circle mb-3"
                 width="100" height="100">
 
