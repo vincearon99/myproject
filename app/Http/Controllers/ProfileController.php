@@ -22,13 +22,12 @@ class ProfileController extends Controller
 
         if ($request->hasFile('profile_picture')) {
 
-            $file = $request->file('profile_picture');
-            $filename = time() . '.' . $file->getClientOriginalExtension();
+    $file = $request->file('profile_picture');
 
-            $file->storeAs('profile_pictures', $filename, 'public');
+    $path = $file->store('profile_pictures', 'public');
 
-            $user->profile_picture = 'profile_pictures/' . $filename;
-        }
+    $user->profile_picture = $path;
+}
 
         $user->save();
 
