@@ -47,6 +47,8 @@
 
             <input type="password" name="password" class="form-control mb-3" placeholder="Password" required>
 
+            <input type="password" name="confirm_password" class="form-control" id="confirmPassword" placeholder="Confirm password" required>
+
             <button type="submit" class="btn btn-success w-100">
                 Register
             </button>
