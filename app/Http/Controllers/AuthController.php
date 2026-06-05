@@ -19,8 +19,8 @@ class AuthController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users',
-            'password' => 'required|min:6'
-            'password.confirmed' => 'Password confirmation does not match.',
+            'password' => 'required|min:6',
+            'password.confirmed' => 'Password confirmation does not match.'
         ]);
 
         User::create([
