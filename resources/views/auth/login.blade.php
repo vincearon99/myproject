@@ -12,7 +12,7 @@
 
 <div class="container d-flex justify-content-center align-items-center vh-100">
 
-    <div class="card shadow p-2" style="width: 350px;">
+    <div class="card shadow p-4" style="width: 350px;">
         <h4 class="text-center mb-3">Login</h4>
 
     @if(session('success'))
