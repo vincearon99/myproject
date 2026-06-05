@@ -13,7 +13,7 @@
 </head>
 <body class="bg-light">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary shadow">
     <div class="container">
 
         <a class="navbar-brand fw-bold" href="{{ route('dashboard') }}">
